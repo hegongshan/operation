@@ -1,16 +1,7 @@
----
-title: 在Linux中存活下来之时间管理工具timedatectl
-date: 2022-02-17 15:58:12
-tags: linux
-categories: linux
----
-
 本文介绍了时间管理工具timedatectl。
 
 time：时间，x时x分x秒
 date：日期，x年x月x日
-
-<!--more-->
 
 1.查看当前时间设置
 

@@ -2,6 +2,7 @@
 * 包管理器
     * [yum](/yum.md)
     * [apt](/apt.md)
+* [软件版本管理工具alternatives](linux-alternatives.md)
 * 定时任务
     * [执行一次](/at.md)
     * [执行多次](/crontab.md)

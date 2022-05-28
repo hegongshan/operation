@@ -1,4 +1,9 @@
+* [grep](/grep.md)
+* [sed](/sed.md)
 * [awk](/awk.md)
+* LeetCode
+    * [192.统计词频](/leetcode/word-frequency.md)
+    * [195. 第十行](/leetcode/tenth-line.md)
 * 包管理器
     * [yum](/yum.md)
     * [apt](/apt.md)

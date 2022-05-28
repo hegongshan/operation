@@ -48,9 +48,9 @@ update-alternatives --install <link> <name> <path> <priority>
 
 实例：
 
-下面以gcc为例，使用`/usr/bin/gcc`作为各个版本GCC的软链接。
+下面以GCC为例，使用`/usr/bin/gcc`作为各个版本GCC的软链接。
 
-首先，对现有的gcc执行重命名：
+首先，对现有的GCC执行重命名：
 
 ```bash
 mv /usr/bin/gcc /usr/bin/gcc-4.8.5
@@ -94,8 +94,8 @@ auto
 
 其中，第一行表示当前的模式（关于模式的使用参看[切换版本](#切换版本)）：
 
-* `auto`表示自动模式，name会指向优先级最高的路径；
-* `manual`表示手动模式，用户手动设置name指向的路径。
+* `auto`表示自动模式，name自动指向优先级最高的路径；
+* `manual`表示手动模式，用户手动设置了name指向的路径。
 
 ### 查看alternatives组
 

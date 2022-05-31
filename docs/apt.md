@@ -34,3 +34,22 @@ apt list --all-versions
 apt info <package>
 ```
 
+### 查看命令所在的包
+
+首先，需要安装apt-file工具：
+
+```bash
+apt install -y apt-file
+```
+
+然后，生成缓存文件：
+
+```bash
+apt-file update
+```
+
+最后，查询命令所在的包
+
+```bash
+apt-file search 命令
+```

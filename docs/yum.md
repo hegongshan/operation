@@ -90,3 +90,9 @@ yum list available
 ```shell
 yum list
 ```
+
+### 查看命令所在的包
+
+```bash
+yum provides 命令
+```

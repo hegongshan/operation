@@ -1,5 +1,7 @@
 [192. 统计词频](https://leetcode.cn/problems/word-frequency/)
 
+### 题目描述
+
 写一个 bash 脚本以统计一个文本文件 words.txt 中每个单词出现的频率。
 
 为了简单起见，你可以假设：
@@ -30,6 +32,8 @@ day 1
 
 * 不要担心词频相同的单词的排序问题，每个单词出现的频率都是唯一的。
 * 你可以使用一行`Unix pipes`实现吗？
+
+### 解答
 
 ```bash
 cat words.txt | tr -s " " "\n" | sort | uniq -c | sort -k 1nr,2r | awk '{print $2 " " $1}'

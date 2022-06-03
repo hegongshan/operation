@@ -29,3 +29,4 @@
         * [iptables](/firewall-iptables.md)
         * [firewalld](firewall-firewalld.md)
         * [ufw](/firewall-ufw.md)
+* [IPMI](/ipmi.md)

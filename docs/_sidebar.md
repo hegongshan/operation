@@ -1,3 +1,5 @@
+* [VIM](/vim.md)
+* [Shell](/shell.md)
 * [grep](/grep.md)
 * [sed](/sed.md)
 * [awk](/awk.md)

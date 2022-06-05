@@ -1,15 +1,17 @@
 * [VIM](/vim.md)
 * [Shell](/shell.md)
-* [grep](/grep.md)
-* [sed](/sed.md)
-* [awk](/awk.md)
+* [休眠与等待](/sleep-and-wait.md)
+* Linux三剑客
+    * [grep](/grep.md)
+    * [sed](/sed.md)
+    * [awk](/awk.md)
 * LeetCode
     * [192.统计词频](/leetcode/word-frequency.md)
     * [195. 第十行](/leetcode/tenth-line.md)
 * 包管理器
     * [yum](/yum.md)
     * [apt](/apt.md)
-* [软件版本管理工具alternatives](linux-alternatives.md)
+* [软件版本管理工具alternatives](alternatives.md)
 * 定时任务
     * [执行一次](/at.md)
     * [执行多次](/crontab.md)

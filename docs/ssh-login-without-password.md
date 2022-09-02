@@ -31,7 +31,7 @@ hegongshan@hgs:~$ ls ~/.ssh/id_*
 
 2.将公钥复制到服务器上
 
-ssh中有个一个工具ssh-copy-id，用于复制公钥：
+ssh中有一个工具ssh-copy-id，用于复制公钥：
 
 ```
 hegongshan@hgs:~$ ssh-copy-id 用户名@IP地址

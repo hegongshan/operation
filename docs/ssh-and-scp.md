@@ -1,18 +1,22 @@
-前面我们讲了如何在Windows系统中登录Linux服务器，以及实现windows和Linux之间的文件传输操作。今天我们来讲下在Linux系统（如ubuntu）中如何登录Linux服务器及实现文件传输。
-
 Linux中使用**ssh命令**登录其他的Linux，使用**scp命令**实现文件传输。
 
 <!--more-->
 
 ### ssh
 
-ssh，全称Secure Shell，是一种用于远程登录的协议。
+ssh，全称<strong style="color:red">s</strong>ecure <strong style="color:red">sh</strong>ell，是一种用于远程登录的协议。
 
 语法：
 
 ```shell
-ssh 用户名@IP地址
+ssh [options] user@hostname
 ```
+
+选项：
+
+`-p port`：指定端口号，默认为22；
+
+`-i identity_file`：指定私钥文件。
 
 示例：
 
@@ -22,9 +26,15 @@ ssh 用户名@IP地址
 ssh root@118.190.95.35
 ```
 
+如果服务器的ssh端口号被修改过，假设修改后的端口号为1922，则需要添加-p选项：
+
+```bash
+ssh -p 1922 root@118.190.95.35
+```
+
 ### scp
 
-scp，全称Secure Copy，用于Linux之间复制文件和目录。
+scp，全称<strong style="color:red">s</strong>ecure <strong style="color:red">c</strong>o<strong style="color:red">p</strong>y，用于Linux之间复制文件和目录。
 
 语法：
 
@@ -32,10 +42,11 @@ scp，全称Secure Copy，用于Linux之间复制文件和目录。
 scp [options] 源文件路径 目标路径 
 ```
 
-参数:
+选项:
 
 * `-r`：递归复制目录下的所有文件，包括目录本身
 * `-P port`：指定端口号
+* `-i identity_file`：指定私钥文件
 
 示例：
 

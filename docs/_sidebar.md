@@ -1,4 +1,7 @@
+* [查看帮助信息](/command-line-help.md)
 * [VIM](/vim.md)
+* [文件搜索](/file-search.md)
+* [排序](/sort.md)
 * [Shell](/shell.md)
 * [休眠与等待](/sleep-and-wait.md)
 * Linux三剑客

@@ -12,8 +12,9 @@
     * [wget](/wget.md)
     * [curl](/curl.md)
 * 包管理器
-    * [yum](/yum.md)
-    * [apt](/apt.md)
+    * [yum](/package/yum.md)
+    * [APT](/package/apt.md)
+    * [APT换源](/package/apt-sources.md)
 * [软件版本管理工具alternatives](alternatives.md)
 * 定时任务
     * [执行一次](/at.md)

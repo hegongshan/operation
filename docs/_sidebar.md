@@ -1,13 +1,23 @@
-* [查看帮助信息](/command-line-help.md)
-* [VIM](/vim.md)
-* [文件搜索](/file-search.md)
-* [排序](/sort.md)
-* [Shell](/shell.md)
-* [休眠与等待](/sleep-and-wait.md)
+* 快速入门
+    * [查看帮助信息](/command-line-help.md)
+    * [查看文件内容](/view-file-content.md)
+    * [链接](/ln.md)
+    * [VIM](/vim.md)
+    * [压缩与解压缩](/tar.md)
+    * [统计行数](/wc.md)
+    * [文件搜索](/file-search.md)
+    * [排序](/sort.md)
+    * [查看历史记录](/history.md)
+* 进阶内容
+    * [进程管理](/process-management.md)
+    * [作业管理](/job.md)
 * Linux三剑客
     * [grep](/grep.md)
     * [sed](/sed.md)
     * [awk](/awk.md)
+* Shell
+    * [Shell基础使用](/shell.md)
+    * [休眠与等待](/sleep-and-wait.md)
 * LeetCode
     * [192.统计词频](/leetcode/word-frequency.md)
     * [195. 第十行](/leetcode/tenth-line.md)

@@ -1,36 +1,11 @@
-Linux中使用**ssh命令**登录其他的Linux，使用**scp命令**实现文件传输。
+---
+title: sftp协议
+date: 2022-02-23 21:46:31
+tags: linux
+Categories: linux
+---
 
-<!--more-->
 
-### ssh
-
-ssh，全称<strong style="color:red">s</strong>ecure <strong style="color:red">sh</strong>ell，是一种用于远程登录的协议。
-
-语法：
-
-```shell
-ssh [options] user@hostname
-```
-
-选项：
-
-`-p port`：指定端口号，默认为22；
-
-`-i identity_file`：指定私钥文件。
-
-示例：
-
-这里以root用户和 IP 地址118.190.95.35（从网上随便找的一个IP）为例
-
-```shell
-ssh root@118.190.95.35
-```
-
-如果服务器的ssh端口号被修改过，假设修改后的端口号为1922，则需要添加-p选项：
-
-```bash
-ssh -p 1922 root@118.190.95.35
-```
 
 ### scp
 
@@ -75,3 +50,62 @@ scp -r root@118.190.95.35:/usr/local/tomcat/webapps/ROOT /home/hegongshan/Deskto
 ```
 
 结果将是在/home/hegongshan/Desktop/下有一个ROOT文件夹。
+
+### sftp
+
+sftp全称为Secure File Transfer Protocol，即安全的文件传输协议。
+
+#### 工作原理
+
+流程图
+
+#### 上手实践
+
+使用sftp协议登录ftp服务器：
+
+```bash
+sftp user@ip
+```
+
+与scp相比，sftp可以方便的操作本地和远程目录。
+
+1.下载
+
+```bash
+get [-afPpRr] remote [local]
+```
+
+2.上传
+
+```bash
+put local [remote]
+```
+
+3.目录操作
+
+```bash
+cd
+rm
+
+lcd == !cd
+lrm == !rm
+```
+
+lcommand  == !command，表示在本地执行command命令。
+
+其中，l为local的首字母缩写。
+
+4.退出
+
+```bash
+bye
+quit
+exit
+```
+
+5.查看帮助信息
+
+```bash
+help
+?
+```

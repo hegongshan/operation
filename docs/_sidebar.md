@@ -33,10 +33,10 @@
     * [执行一次](/at.md)
     * [执行多次](/crontab.md)
 * SSH
-    * [ssh与scp](/ssh-and-scp.md)
-    * [sftp](/sftp.md)
-    * [秘钥登录](/ssh-login-without-password.md)
-    * [安全](/linux-ssh-change-port-and-prohibit-password.md)
+    * [远程登录ssh](/ssh/ssh.md)
+    * [文件传输scp和sftp](/ssh/file-transfer.md)
+    * [秘钥登录](/ssh/public-key-authentication.md)
+    * [服务器安全](/linux-ssh-change-port-and-prohibit-password.md)
 * 管理工具
     * [systemctl](/systemctl.md)
     

@@ -1,9 +1,3 @@
-Linux中使用**ssh命令**登录其他的Linux，使用**scp命令**实现文件传输。
-
-<!--more-->
-
-### ssh
-
 ssh，全称<strong style="color:red">s</strong>ecure <strong style="color:red">sh</strong>ell，是一种用于远程登录的协议。
 
 语法：

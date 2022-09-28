@@ -1,12 +1,3 @@
----
-title: sftp协议
-date: 2022-02-23 21:46:31
-tags: linux
-Categories: linux
----
-
-
-
 ### scp
 
 scp，全称<strong style="color:red">s</strong>ecure <strong style="color:red">c</strong>o<strong style="color:red">p</strong>y，用于Linux之间复制文件和目录。

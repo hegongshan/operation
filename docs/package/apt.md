@@ -53,3 +53,12 @@ apt-file update
 ```bash
 apt-file search 命令
 ```
+
+反过来，如果要查询“一个包中包含哪些命令”，则可以使用
+
+```bash
+# 列出安装到系统中的软件包文件，包括可执行文件和帮助手册等
+dpkg -L package-name
+dpkg --listfiles package-name
+```
+

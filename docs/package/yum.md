@@ -96,3 +96,21 @@ yum list
 ```bash
 yum provides 命令
 ```
+
+如果要查看软件包中包含的所有文件，可以使用`yum-utils`工具。
+
+首先，需要安装`yum-utils`：
+
+```bash
+yum install -y yum-utils
+```
+
+然后，使用如下的命令：
+
+```bash
+repoquery -l package
+repoquery --list package
+```
+
+
+

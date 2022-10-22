@@ -8,19 +8,20 @@
     * [文件搜索](/file-search.md)
     * [排序](/sort.md)
     * [查看历史记录](/history.md)
-* 进阶内容
-    * [进程管理](/process-management.md)
-    * [作业管理](/job.md)
 * Linux三剑客
     * [grep](/grep.md)
     * [sed](/sed.md)
     * [awk](/awk.md)
 * Shell
-    * [Shell基础使用](/shell.md)
+    * [Shell基础使用](/shell/basic.md)
+    * [花括号扩展](/shell/brace-expansion.md)
+    * LeetCode
+        * [192.统计词频](/leetcode/word-frequency.md)
+        * [195. 第十行](/leetcode/tenth-line.md)
+* 进阶内容
+    * [进程管理](/process-management.md)
+    * [作业管理](/job.md)
     * [休眠与等待](/sleep-and-wait.md)
-* LeetCode
-    * [192.统计词频](/leetcode/word-frequency.md)
-    * [195. 第十行](/leetcode/tenth-line.md)
 * 下载文件
     * [wget](/wget.md)
     * [curl](/curl.md)

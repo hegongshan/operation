@@ -15,6 +15,7 @@
 * Shell
     * [Shell基础使用](/shell/basic.md)
     * [花括号扩展](/shell/brace-expansion.md)
+    * [参数扩展](/shell/parameter-expansion.md)
     * LeetCode
         * [192.统计词频](/leetcode/word-frequency.md)
         * [195. 第十行](/leetcode/tenth-line.md)

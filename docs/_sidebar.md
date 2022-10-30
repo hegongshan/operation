@@ -19,6 +19,8 @@
     * LeetCode
         * [192.统计词频](/leetcode/word-frequency.md)
         * [195. 第十行](/leetcode/tenth-line.md)
+* [解析命令行选项]
+    * [getopts](/shell/getopts.md)
 * 进阶内容
     * [进程管理](/process-management.md)
     * [作业管理](/job.md)

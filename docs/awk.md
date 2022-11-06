@@ -18,11 +18,17 @@ prog的格式为：
 ```shell
 pattern {action}
 ```
+如果没有指定pattern，则匹配所有行，即对所有行执行action；如果没有指定action，则打印整行。
 
 在AWK中，有两个特殊的`pattern`——`BEGIN`和`END`：
 
-```shell
-BEGIN {} {} END {}
+①`BEGIN`指定的action在读取第一行之前执行；
+
+②`END`指定的action在读取最后一行之后执行。
+
+因此，一个常见的awk模板为
+```bash
+awk 'BEGIN { } { } END { }' file
 ```
 
 例如，对于`/etc/passwd`，按照冒号进行分隔，只输出root的信息：

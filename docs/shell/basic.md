@@ -4,6 +4,20 @@ Shell脚本是一门比较简单的语言，其难点在于：第一，需要熟
 
 本文总结了Shell编程中与其他高级语言的不同之处。
 
+### 符号说明
+
+| 符号       | 英文                           | 符号      | 英文              |
+| ---------- | ------------------------------ | --------- | ----------------- |
+| 中括号`[]` | square bracket                 | 斜杠`/`   | slash             |
+| 圆括号`()` | parenthesis（复数parentheses） | 反斜杠`\` | backslash         |
+| 花括号`{}` | brace                          | 连字符`-` | hyphen            |
+| 冒号`:`    | colon                          | 问号`?`   | question mark     |
+| 分号`;`    | semicolon                      | 星号`*`   | asterisk          |
+| 逗号`,`    | comma                          | 惊叹号`!` | exclamation point |
+| 双引号`""` | double quote                   | 波浪号`~` | tilde             |
+| 单引号`''` | single quote                   | 井号`#`   | number sign       |
+| 反引号     | backquote                      | 符号`|`   | pipe              |
+
 ### 指定解释器
 
 在`*.sh`第一行，需要指定shell脚本的解释器，通常使用`bash`：

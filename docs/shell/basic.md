@@ -13,10 +13,11 @@ Shell脚本是一门比较简单的语言，其难点在于：第一，需要熟
 | 花括号`{}` | brace                          | 连字符`-` | hyphen            |
 | 冒号`:`    | colon                          | 问号`?`   | question mark     |
 | 分号`;`    | semicolon                      | 星号`*`   | asterisk          |
-| 逗号`,`    | comma                          | 惊叹号`!` | exclamation point |
+| 逗号`,`    | comma                          | 感叹号`!` | exclamation point |
 | 双引号`""` | double quote                   | 波浪号`~` | tilde             |
 | 单引号`''` | single quote                   | 井号`#`   | number sign       |
-| 反引号     | backquote                      | 符号`|`   | pipe              |
+| 反引号&#96;&#96; | backquote                      | 符号&#124;   | pipe              |
+| 插入符号`^` | caert | 美元符`$` | dollar sign |
 
 ### 指定解释器
 

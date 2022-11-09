@@ -27,6 +27,24 @@ locate xxx
 ### find
 
 ```shell
-find <dir> -name <name>
+find [-L] <dir> -name <name>
 ```
 
+示例：2022年11月5日，信息安全工程师试题
+
+```bash
+$ echo "Hello world" > hello.txt
+$ ln -s hello.txt hello_symlink.txt
+```
+
+* 查看失效的符号链接
+
+```bash
+$ find -L /home -type l
+```
+
+* 删除失效的符号链接
+
+```bash
+$ find -L /home -type l -exec rm -f {} +;
+```

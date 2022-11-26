@@ -34,10 +34,86 @@ awk 'BEGIN { } { } END { }' file
 例如，对于`/etc/passwd`，按照冒号进行分隔，只输出root的信息：
 
 ```shell
-hgs:~ hegongshan$ awk -F: '$1 == "root" { print $0 }' /etc/passwd 
-root:*:0:0:System Administrator:/var/root:/bin/sh
-hgs:~ hegongshan$ awk -F: '{ if ($1 == "root")  print $0 }' /etc/passwd 
-root:*:0:0:System Administrator:/var/root:/bin/sh
+$ awk -F: '$1 == "root" { print $0 }' /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+$ awk -F: '{ if ($1 == "root")  print $0 }' /etc/passwd 
+root:x:0:0:root:/root:/bin/bash
+```
+
+### 变量
+
+`NF`表示字段的个数，`$NF`表示第`NF`个字段的值，即最后一个字段的值。
+
+$(NF - 1)表示倒数第二个字段。
+
+```bash
+$ echo "Hello AWK" > test.txt
+$ awk '{print $1, $2, $NF, $(NF - 1)}' test.txt
+Hello AWK AWK Hello
+```
+
+### 函数
+
+* length()：字符串、数组的长度。若没有设置参数，则表示计算当前行`$0`的长度。
+
+```bash
+$ awk '{print length, length($1), length($2)}' test.txt 
+9 5 3
+```
+
+* substr(s, m [, n]])：从字符串s的第m位开始，截取长度为n的子串。如果n没有设置，则表示从m开始到s的末尾。
+
+字符串→整数
+
+整数→字符串
+
+* asort(s [, d [, how] ])：根据值对源数组s进行排序（默认为升序），并用从1开始的整数替换原来的索引，返回s中的元素个数。如果指定了目的数组d，则保持源数组s的索引不变，d存放排序后的值。
+
+how的有效值如下：
+
+| 排序顺序      | 描述                     | 排序顺序       | 描述                     |
+| :------------ | :----------------------- | -------------- | ------------------------ |
+| @val_str_asc  | 对值按照字符串升序排列   | @val_num_asc   | 对值按照整数升序排列     |
+| @val_str_desc | 对值按照字符串降序排列   | @val_num_desc  | 对值按照整数降序排列     |
+| @val_type_asc | 对值按照类型进行升序排列 | @val_type_desc | 对值按照类型进行降序排列 |
+
+示例：
+
+```bash
+$ cat > test.txt << EOF
+https://www.zhihu.com
+https://www.baidu.com
+https://www.zhihu.com/creator
+EOF
+$ awk -F "/+" '{
+	arr[$2]++
+}
+END {
+	len = asort(arr, d, "@val_num_desc")
+  for (i = 1; i <= len; i++) {
+  	print d[i], arr[d[i]]
+  }
+}' test.txt
+2 
+1
+```
+
+* asorti(s [, d [, how] ])：根据索引对源数组s进行排序，值并不会被排序。如果设置了d，则保持源数组s的索引不变，d存放排序后的索引。
+
+how的有效值如下：
+
+| 排序顺序      | 描述                     | 排序顺序       | 描述                     |
+| :------------ | :----------------------- | -------------- | ------------------------ |
+| @ind_str_asc  | 对索引按照字符串升序排列 | @ind_num_asc   | 对索引按照整数升序排列   |
+| @ind_str_desc | 对索引按照字符串降序排列 | @ind_num_desc  | 对索引按照整数降序排列   |
+
+```bash
+$ awk -F "/+" '{ arr[$2]++ } END { len = asorti(arr, d); for (i = 1; i <= len; i++) { print d[i], arr[d[i]] } }' test.txt
+www.baidu.com 1
+www.zhihu.com 2
+$ awk -F "/+" '{ arr[$2]++ } END { len = asorti(arr, d, "@ind_num_desc"); for (i = 1; i <= len; i++) { print d[i], arr[d[i]] } }' test.txt
+www.zhihu.com 2
+www.baidu.com 1
 ```
 
 ### 综合应用

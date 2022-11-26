@@ -17,8 +17,10 @@
     * [花括号扩展](/shell/brace-expansion.md)
     * [参数扩展](/shell/parameter-expansion.md)
     * LeetCode
-        * [192.统计词频](/leetcode/word-frequency.md)
-        * [195. 第十行](/leetcode/tenth-line.md)
+        * [192.统计词频](/shell/leetcode/word-frequency.md)
+        * [195.第十行](/shell/leetcode/tenth-line.md)
+    * Nowcoder
+        * [19.打印等腰三角形](/shell/nowcoder/19-print-isosceles-triangle.md)
 * [解析命令行选项]
     * [getopts](/shell/getopts.md)
 * 进阶内容

@@ -21,7 +21,7 @@
         * [195.第十行](/shell/leetcode/tenth-line.md)
     * Nowcoder
         * [19.打印等腰三角形](/shell/nowcoder/19-print-isosceles-triangle.md)
-* [解析命令行选项]
+* 解析命令行选项
     * [getopts](/shell/getopts.md)
 * 进阶内容
     * [进程管理](/process-management.md)

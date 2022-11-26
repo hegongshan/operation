@@ -44,7 +44,7 @@ update-alternatives --install <link> <name> <path> <priority>
 * 在`/var/lib/alternatives`目录下生成名为`name`的文件，记录`link`、`path`以及`priority`。（对于Ubuntu，目录名为`/var/lib/dpkg/alternatives`）
 
 * 在`/etc/alternatives`目录下创建软链接`name`，指向优先级最高的路径
-* 创建软链接`link`，指向文件`name`
+* 创建软链接`link`，指向文件`/etc/alternatives/${name}`
 
 实例：
 

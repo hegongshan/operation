@@ -21,6 +21,8 @@
         * [195.第十行](/shell/leetcode/tenth-line.md)
     * Nowcoder
         * [19.打印等腰三角形](/shell/nowcoder/19-print-isosceles-triangle.md)
+    * NCRE
+        * [2025.03综合题](/shell/ncre.md)
 * 解析命令行选项
     * [getopts](/shell/getopts.md)
 * 进阶内容
